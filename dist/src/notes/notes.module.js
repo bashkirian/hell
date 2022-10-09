@@ -10,11 +10,13 @@ exports.WalletModule = void 0;
 const common_1 = require("@nestjs/common");
 const notes_service_1 = require("./notes.service");
 const notes_controller_1 = require("./notes.controller");
+const notes_controller_2 = require("./notes.controller");
+const notes_controller_3 = require("./notes.controller");
 let WalletModule = class WalletModule {
 };
 WalletModule = __decorate([
     (0, common_1.Module)({
-        controllers: [notes_controller_1.WalletController],
+        controllers: [notes_controller_1.WalletController, notes_controller_2.NFTController, notes_controller_3.TransferController],
         providers: [notes_service_1.WalletService]
     })
 ], WalletModule);

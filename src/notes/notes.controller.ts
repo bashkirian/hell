@@ -1,11 +1,11 @@
 import { 
   Controller, Get, Post, 
-  Body, Param, Query, HttpStatus, ParseIntPipe, UseGuards 
+  Body, Param, HttpStatus
 } from '@nestjs/common';
 import { WalletService } from './notes.service';
 
 import { NFTGenerateDto, ExchangeRubleDto, ExchangeMaticDto, ExchangeNFTDto, NFTQueryDto} from './dto/create-note.dto';
-import { ApiOperation, ApiParam, ApiQuery, ApiResponse, ApiSecurity, ApiTags } from '@nestjs/swagger';
+import { ApiOperation, ApiResponse, ApiTags } from '@nestjs/swagger';
 
 import { Keypair, Balance, Transaction, NFTBalance, NFTInfo} from './entities/note.entity';
 
@@ -131,7 +131,7 @@ export class WalletController {
 
 @ApiTags('NFT')
 @Controller('v1/nft')
-export class NFTController { // вообще не ебу, как
+export class NFTController { 
     constructor(private readonly services: WalletService) { }
 
     @Get(':tokenId')
