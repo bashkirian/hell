@@ -1,0 +1,3 @@
+- miner fee/transaction fee added to each transaction by the sender
+
+- web UI

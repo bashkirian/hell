@@ -1,0 +1,1 @@
+{"version":3,"file":"transaction-input.js","sourceRoot":"","sources":["../../../../blockchain/src/wallet/transaction-input.ts"],"names":[],"mappings":";;AAAA,MAAqB,gBAAgB;IAKjC,YAAY,MAAc,EAAE,OAAe;QACvC,IAAI,CAAC,MAAM,GAAG,MAAM,CAAC;QACrB,IAAI,CAAC,OAAO,GAAG,OAAO,CAAC;IAC3B,CAAC;CACJ;AATD,mCASC"}
